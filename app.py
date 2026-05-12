@@ -101,3 +101,35 @@ celebrity = input("Enter a Celebrity:")
 print("Roses are " + color)
 print(plural_noun + " are blue")
 print("I Love " + celebrity)
+
+
+# Loops
+friends = ["Ayesha", "Zainab", "Noor", "Javeria", "Mahnoor", "Minahil", "Fiza"]
+#            0          1        2                   -3         -2        -1
+friends[1] = "Mehwish"
+print(friends[1]) # Mehwish
+print(friends)  # ["Ayesha", "Zainab", "Noor", "Javeria", "Mahnoor", "Minahil", "Fiza"]
+print(friends[0]) # Ayesha
+print(friends[2]) # Noor
+print(friends[-1]) # Fiza
+print(friends[1:4]) # ['Mehwish', 'Noor', 'Javeria']
+print(friends[1:]) # ['Mehwish', 'Noor', 'Javeria', 'Mahnoor', 'Minahil', 'Fiza']
+
+# List Functions
+lucky_numbers = [4, 8, 15, 16, 23, 42, 46]
+friends = ["Ayesha", "Zainab", "Noor", "Javeria", "Mahnoor", "Minahil", "Fiza"]
+print(friends) #  ["Ayesha", "Zainab", "Noor", "Javeria", "Mahnoor", "Minahil", "Fiza"]
+friends.extend(lucky_numbers)
+print(friends) # ['Ayesha', 'Zainab', 'Noor', 'Javeria', 'Mahnoor', 'Minahil', 'Fiza', 4, 8, 15, 16, 23, 42, 46]
+friends.append("Creed")
+print(friends) # ['Ayesha', 'Zainab', 'Noor', 'Javeria', 'Mahnoor', 'Minahil', 'Fiza', 'Creed']
+friends.insert(1, "Kelly")
+print(friends) # ['Ayesha', 'Kelly', 'Zainab', 'Noor', 'Javeria', 'Mahnoor', 'Minahil', 'Fiza']
+friends.remove("Ayesha")
+print(friends) # ['Zainab', 'Noor', 'Javeria', 'Mahnoor', 'Minahil', 'Fiza']
+friends.clear()
+print(friends) # []
+friends.pop()
+print(friends) #  ['Ayesha', 'Zainab', 'Noor', 'Javeria', 'Mahnoor', 'Minahil']
+print(friends.index("Mahnoor")) # 4
+# print(friends.index("Mehwish")) # Error
